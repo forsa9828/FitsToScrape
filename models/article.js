@@ -4,20 +4,26 @@ var Schema = mongoose.schema;
 
 
 var ArticleSchema = new Schema({
-
+//headline
   title: {
 
     type: String,
-
     required: true
 
   },
+  
+//summary
+  summary: {
 
+		type: String,
+		default: "Summary unavailable."
 
+	},
+  
+//url
   link: {
 
     type: String,
-
     required: true
 
   },
@@ -25,7 +31,6 @@ var ArticleSchema = new Schema({
   // Populate the Article
 
   note: {
-
     type: Schema.Types.ObjectId,
     ref: "Note"
 
