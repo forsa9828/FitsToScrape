@@ -24,9 +24,9 @@ var ArticleSchema = new Schema({
  },
 
   // Populate the Article
-  note: {
+  comment: {
     type: Schema.Types.ObjectId,
-    ref: "Note"
+    ref: "Comment"
   }
 
 });
