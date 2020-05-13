@@ -9,31 +9,24 @@ var ArticleSchema = new Schema({
 
     type: String,
     required: true
-
   },
   
 //summary
   summary: {
-
-		type: String,
-		default: "Summary unavailable."
-
-	},
+	type: String,
+	default: "Summary unavailable."
+ },
   
 //url
   link: {
-
     type: String,
     required: true
-
-  },
+ },
 
   // Populate the Article
-
   note: {
     type: Schema.Types.ObjectId,
     ref: "Note"
-
   }
 
 });
